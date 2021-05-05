@@ -154,8 +154,8 @@
           Ваш пол
         </div>
         <div class="calculating__choose" id="gender">
-          <div class="calculating__choose-item calculating__choose-item_active">Женщина</div>
-          <div class="calculating__choose-item">Мужчина</div>
+          <div id="femail" class="calculating__choose-item" data-gender="woman">Женщина</div>
+          <div id="mail" class="calculating__choose-item" data-gender="man">Мужчина</div>
         </div>
 
         <div class="calculating__subtitle">
@@ -171,10 +171,10 @@
           Выберите вашу физическая активность
         </div>
         <div class="calculating__choose calculating__choose_big">
-          <div id="low" class="calculating__choose-item">Низкая активность </div>
-          <div id="small" class="calculating__choose-item calculating__choose-item_active">Невысокая активность</div>
-          <div id="medium" class="calculating__choose-item">Умеренная активность</div>
-          <div id="high" class="calculating__choose-item">Высокая активность</div>
+          <div id="low" class="calculating__choose-item" data-coef="1.2">Низкая активность </div>
+          <div id="small" class="calculating__choose-item" data-coef="1.375">Невысокая активность</div>
+          <div id="medium" class="calculating__choose-item" data-coef="1.55">Умеренная активность</div>
+          <div id="high" class="calculating__choose-item" data-coef="1.755">Высокая активность</div>
         </div>
 
         <div class="calculating__divider"></div>
@@ -283,8 +283,7 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/bundle.js"></script>
 </body>
 
 </html>
